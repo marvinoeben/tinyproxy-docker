@@ -5,3 +5,4 @@ RUN apt-get install -y tinyproxy
 RUN rm /etc/tinyproxy.conf
 COPY tinyproxy.conf /etc/tinyproxy.conf
 RUN service tinyproxy restart
+EXPOSE 8888
